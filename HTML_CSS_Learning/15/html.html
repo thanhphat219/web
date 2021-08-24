@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>thanphat219</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            html {
+                font-size: 40px;
+            }
+            .box {
+                width: calc(120px - 20px);
+                height: 100px;
+                background: rgb(168, 168, 83);
+            }
+            h1 {
+                font-size: 2rem;
+            }
+
+            .box::after {
+                content: "Hello";
+            }
+            
+            a::after{
+                content: " ("attr(href)") ";
+            }
+
+            h1:hover {
+                color: royalblue;
+            }
+            .h:active {
+                color: salmon;
+            }
+
+            .box::before {
+                content: "";
+                display: block;
+                width: 50px;
+                height: 50px;
+                background-color: #fff;
+            }
+            .h::first-letter {
+                font-size: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box" data-tile="2"></div>
+
+        <a href="https://www.facebook.com/thanhphat219"> A </a>
+
+        <h1>CSS hover</h1>
+
+        <h1 class="h">CSS hover</h1>
+        <h1>CSS hover</h1>
+        <div>
+            <h1>CSS</h1>
+        </div>
+    </body>
+</html>
+
+<!-- remm: phu thuoc the html -->
+<!-- em: tim the gan nhat dc dinh nghia em -->
