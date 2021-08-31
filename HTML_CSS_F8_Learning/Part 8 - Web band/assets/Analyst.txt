@@ -1,0 +1,8 @@
+    Phân tích:
+    - Header (Đầu trang)
+    - Navigation (Điều hướng)
+    - Breadcrumb
+    - Slidebar
+    - Slider 
+    - Content (Nội dung)
+    - Footer (Chân trang)
