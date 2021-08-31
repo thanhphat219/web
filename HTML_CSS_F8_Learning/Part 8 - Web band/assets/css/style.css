@@ -17,32 +17,63 @@ html {
     background-color: black;
 }
 
-#nav {
+#nav, .subnav {
+    list-style-type: none;
+}
 
+#nav > li {
+    display: inline-block;
 }
 
 #nav li{
-    display: inline-block;
+    position: relative;
+}
+#nav li:hover .subnav {
+    display: block;
+}
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
 }
 
 #nav li a {
-    color: #fff;
     text-decoration: none;
     line-height: 46px;
     padding:  0 24px;
-    
+    display: block;
 }
-#nav li:hover a  {
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
     color: #000;
     background-color: #ccc;
-    display: inline-block;
 }
+
+/* #nav li:hover a  {
+    color: #000;
+    background-color: #ccc;
+} */
+
 #nav .subnav {
     display: none;
+    top: 100%;
+    min-width: 160px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-#slider {
+#nav .subnav a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
 
+
+
+#slider {
+    min-height: 500px;
+    background-color: #fff;
 }
 #container {
 
