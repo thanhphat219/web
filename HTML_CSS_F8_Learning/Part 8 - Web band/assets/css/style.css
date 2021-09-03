@@ -15,6 +15,14 @@ html {
 #header {
     height: 46px;
     background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#nav {
+    display: inline-block;
 }
 
 #nav, .subnav {
@@ -69,15 +77,34 @@ html {
     line-height: 38px;
 }
 
+#header .search-btn {
+    float: right;
+    padding: 0px 21px;
+    cursor: pointer;
+}
 
+#header .search-btn:hover {
+    background-color: #f44336;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 14px;
+    line-height: 46px;
+}
 
 #slider {
     min-height: 500px;
-    background-color: #fff;
+    background-color: #ccc;
+    margin-top: 46px;
 }
 #container {
-
+    height: 100px;
 }
 #footer {
 
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px;
 }
